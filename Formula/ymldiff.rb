@@ -11,7 +11,7 @@ class Ymldiff < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/consi/ymldiff/releases/download/v0.0.1/ymldiff_Darwin_x86_64.tar.gz"
-      sha256 "a7ca40e548ce35ab3358f147d20ec016a035b08131ba83cf9d7845916ea01130"
+      sha256 "f1fd9532cc8658acea545022fe0c5822d47e9753ba40375327362ad40c06c5da"
 
       def install
         bin.install "ymldiff"
@@ -19,7 +19,7 @@ class Ymldiff < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/consi/ymldiff/releases/download/v0.0.1/ymldiff_Darwin_arm64.tar.gz"
-      sha256 "d3f391fcc6a5f66ef2e34969eda8a1f0565002fec9e34712f26dc2f3cd1e9aa5"
+      sha256 "39be2749e49d61468fe6bd4e73314dc06d3a365b0363d272b8edaeb836f57412"
 
       def install
         bin.install "ymldiff"
@@ -30,21 +30,21 @@ class Ymldiff < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/consi/ymldiff/releases/download/v0.0.1/ymldiff_Linux_x86_64.tar.gz"
-      sha256 "3a09dd5dedbd7272abc3a491699b48cac44567298c6a64730e38c28cf2732fe0"
+      sha256 "167ca26344b68e24b6fd6ed1ecc735706e3546d57e42c4bf588ad7de5f43c8ac"
       def install
         bin.install "ymldiff"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/consi/ymldiff/releases/download/v0.0.1/ymldiff_Linux_armv6.tar.gz"
-      sha256 "7b98afd34eb1672f716f10107bac932673cb9d9673f3bd9beaadd27cc60a80ae"
+      sha256 "4e0eac98d416581f5cc03f209806d8def66364d96bbae2dd78273eb6d99b6034"
       def install
         bin.install "ymldiff"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/consi/ymldiff/releases/download/v0.0.1/ymldiff_Linux_arm64.tar.gz"
-      sha256 "37c2c917e886e1fda12e874fddde20552c085c429ba1aa1b7c3a4581aa30206e"
+      sha256 "8fd690dc5760bebe363d8092517a122be29aba82e3b7e31bb0ae7c18975cf4c6"
       def install
         bin.install "ymldiff"
       end
