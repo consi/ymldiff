@@ -1,0 +1,16 @@
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.txt
+
+# GoReleaser
+dist/
+
+# Homebrew
+*.bottle.tar.gz
+
